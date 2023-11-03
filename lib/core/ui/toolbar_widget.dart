@@ -49,7 +49,8 @@ class _ToolBarWidgetState extends State<ToolBarWidget> {
   Widget build(BuildContext context) {
     return Positioned(
       left: 0,
-      top: _dy,
+      // 在混合开发环境下，获取屏幕高度失败。导致toolbar定位到屏幕外。暂时不允许拖动
+      bottom: 0,
       child: _ToolBarContent(
         action: widget.action,
         dragCallback: _dragEvent,
