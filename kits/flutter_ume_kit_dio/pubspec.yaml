@@ -14,7 +14,7 @@ dependencies:
     git:
       url: "https://github.com/Zhaoiii/flutter_ume.git"
 
-  dio: ^5.3.0
+  dio: ^5.0.0
 
 dev_dependencies:
   flutter_test:
